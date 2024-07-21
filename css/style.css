@@ -5,6 +5,7 @@
   border: none;
   list-style: none;
   outline: 0;
+  -webkit-font-smoothing: antialiased;
 }
 
 html {
@@ -114,6 +115,7 @@ main header a {
 main .content {
   grid-column: 2/3;
   padding: 30px 30px 30px 0;
+  font-size: 18px;
 }
 main .content h2 {
   font-size: 33px;
@@ -130,13 +132,22 @@ main .content h3 {
 main .content pre {
   background: var(--pre-color);
   margin-bottom: 25px;
-  padding: 15px;
+  padding: 17px;
   color: #fff;
   border-radius: 5px;
   font-family: Monoco, Consolas;
+  font-size: 14px;
 }
 main .content p {
   margin-bottom: 30px;
+}
+main .content span {
+  background: var(--renk1);
+  font-size: 16px;
+}
+main .content .edit-github {
+  font-size: 14px;
+  text-align: right;
 }
 main .sidebar {
   grid-column: 3/3;
@@ -155,6 +166,14 @@ main .sidebar nav ul li a {
   display: block;
   padding: 3px 0;
   font-size: 18px;
+}
+
+.main-footer {
+  padding: 1rem;
+  background-color: var(--renk3);
+  color: #fff;
+  font-size: 0.75rem;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

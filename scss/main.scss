@@ -5,6 +5,7 @@
     border: none;
     list-style: none; //li öğelerinin yanındaki noktalar kaldırıldı 
     outline: 0;
+    -webkit-font-smoothing:antialiased;
 }
 
 // body {
@@ -137,29 +138,44 @@ main {
     .content {
         grid-column: 2 / 3;
         padding: 30px 30px 30px 0;
-        h2{
+        font-size: 18px;
+
+        h2 {
             font-size: 33px;
             color: var(--renk3);
             letter-spacing: .4px;
-            padding-bottom:40px;
-            padding-top:20px;
+            padding-bottom: 40px;
+            padding-top: 20px;
         }
-        h3{
-            font-size:25px;
+
+        h3 {
+            font-size: 25px;
             color: var(--renk3);
-            padding-bottom:40px;
+            padding-bottom: 40px;
         }
-        pre{
+
+        pre {
             background: var(--pre-color);
             margin-bottom: 25px;
-            padding: 15px;
+            padding: 17px;
             color: #fff;
-            border-radius:5px;
-            font-family:Monoco, Consolas;
+            border-radius: 5px;
+            font-family: Monoco, Consolas;
+            font-size:14px;
         }
-        p{
+
+        p {
             margin-bottom: 30px;
 
+        }
+        span{
+            background: var(--renk1);
+            font-size: 16px;
+        }
+
+        .edit-github {
+            font-size: 14px;
+            text-align: right;
         }
     }
 
@@ -178,9 +194,10 @@ main {
             ul {
                 li {
                     margin-bottom: 5px;
+
                     a {
                         display: block;
-                        padding:3px 0;
+                        padding: 3px 0;
                         font-size: 18px;
                     }
                 }
@@ -191,3 +208,23 @@ main {
 
     }
 }
+
+    .main-footer {
+        padding: 1rem;
+        background-color: var(--renk3);
+        color: #fff;
+        font-size: 0.75rem;
+        text-align: center;
+    }
+
+
+
+
+// footer{
+//      background: var(--renk3);
+// color: #fff;
+// padding: 18px;
+// text-align: center; //yazıları ortaladı
+// font-size:14px;
+// letter-spacing:.2px; 
+// }
