@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/style.css">
   <link rel="shortcut icon" href="https://i.pinimg.com/564x/f2/50/85/f25085d8358aed72d8d20647086b64f1.jpg"
     type="image/x-icon">
   <title>Animate.css</title>
@@ -17,9 +17,9 @@
       <h2>Just-add-water CSS animations</h2>
     </div>
     <div class="intro-sidebar">
-      <section>  
+      <section>
         <ul>
-           <h3>Attention seekers</h3>
+          <h3>Attention seekers</h3>
           <li><a href="">bounce</a></li>
           <li><a href=""> flash</a></li>
           <li><a href="">pulse</a></li>
@@ -46,35 +46,36 @@
           <li><a href=""> backInLeft</a></li>
           <li><a href="">backInRight</a></li>
           <li><a href="">backInUp</a></li>
-        </ul>  <ul>
+        </ul>
+        <ul>
           <h3>Attention seekers</h3>
-         <li><a href="">bounce</a></li>
-         <li><a href=""> flash</a></li>
-         <li><a href="">pulse</a></li>
-         <li><a href="">rubberBand</a></li>
-         <li><a href="">shakeX</a></li>
-         <li><a href="">shakeY</a></li>
-         <li><a href="">headShake</a></li>
-         <li><a href="">swing</a></li>
-         <li><a href="">tada</a></li>
-         <li><a href="">wobble</a></li>
-         <li><a href="">jello</a></li>
-         <li><a href="">heartBeat</a></li>
-       </ul>
-       <ul>
-         <h3>Back entrances</h3>
-         <li><a href="">backInDown</a></li>
-         <li><a href=""> backInLeft</a></li>
-         <li><a href="">backInRight</a></li>
-         <li><a href="">backInUp</a></li>
-       </ul>
-       <ul>
-         <h3>Back exits</h3>
-         <li><a href="">backInDown</a></li>
-         <li><a href=""> backInLeft</a></li>
-         <li><a href="">backInRight</a></li>
-         <li><a href="">backInUp</a></li>
-       </ul>
+          <li><a href="">bounce</a></li>
+          <li><a href=""> flash</a></li>
+          <li><a href="">pulse</a></li>
+          <li><a href="">rubberBand</a></li>
+          <li><a href="">shakeX</a></li>
+          <li><a href="">shakeY</a></li>
+          <li><a href="">headShake</a></li>
+          <li><a href="">swing</a></li>
+          <li><a href="">tada</a></li>
+          <li><a href="">wobble</a></li>
+          <li><a href="">jello</a></li>
+          <li><a href="">heartBeat</a></li>
+        </ul>
+        <ul>
+          <h3>Back entrances</h3>
+          <li><a href="">backInDown</a></li>
+          <li><a href=""> backInLeft</a></li>
+          <li><a href="">backInRight</a></li>
+          <li><a href="">backInUp</a></li>
+        </ul>
+        <ul>
+          <h3>Back exits</h3>
+          <li><a href="">backInDown</a></li>
+          <li><a href=""> backInLeft</a></li>
+          <li><a href="">backInRight</a></li>
+          <li><a href="">backInUp</a></li>
+        </ul>
       </section>
     </div>
     <div class="intro-footer">
@@ -83,13 +84,89 @@
   </div>
 
   <main>
-     <header>
+    <header>
       <div class="container">
         <h2>
-          <a href="">Documentation</a>
+          <a href="#documentation">Documentation</a>
         </h2>
       </div>
-     </header>
+    </header>
+    <article id="documentation">
+      <div class="container">
+        <div class="content">
+          <section>
+            <blockquote>Animate.css v4 brought some breaking changes, please refer to the migration guide before
+              updating
+              from v3.x and under.</blockquote>
+            <p>Animate.css is a library of ready-to-use, cross-browser animations for use in your web projects. Great
+              for
+              emphasis, home pages, sliders, and attention-guiding hints.
+            </p>
+          </section>
+          <section>
+            <h2>Installation and Usage</h2>
+            <h3>Installing</h3>
+            <p>Install with npm:</p>
+            <pre>$ npm install animate.css --save</pre>
+            <p>Or install with Yarn (this will only work with appropriate tooling like Webpack, Parcel, etc. If you are
+              not using any tool for packing or bundling your code, you can simply use the CDN method below):</p>
+            <pre>$ yarn add animate.css</pre>
+            <p>Import it into your file:</p>
+            <pre>import 'animate.css';</pre>
+            <p>Or add it directly to your webpage using a CDN:</p>
+            <pre>
+              &lt;head&gt;
+              &lt;link
+                rel=&quot;stylesheet&quot;
+                href=&quot;https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css&quot;
+               /&gt;
+              &lt;/head&gt;
+           </pre>
+            <!-- <h3>Basic usage</h3>
+            <p>After installing Animate.css, add the class animate__animated to an element, along with any of the
+              animation names (don't forget the animate__ prefix!):</p>
+            <pre><h1 class="animate__animated animate__bounce">An animated element</h1></pre>
+            <p>That's it! You've got a CSS animated element. Super!</p>
+            <blockquote>Animations can improve the UX of an interface, but keep in mind that they can also get in the
+              way of your users! Please read the best practices and gotchas sections to bring your web-things to life in
+              the best way possible.</blockquote>
+            <h3>Using @keyframes</h3> -->
+          </section>
+        </div>
+        <div class="sidebar">
+          <div class="version"><a href=""><i class="fa-brands fa-github" style="color: #000000;"></i></a> v4.1.1</div>
+          <nav>
+            <ul>
+              <li>
+                <a href="">Installation and Usage</a>
+              </li>
+              <li><a href="">Utility Classes
+                </a></li>
+              <li><a href="">
+                  Best Practices
+                </a></li>
+              <li><a href="">
+                  Usage with Javascript
+                </a></li>
+              <li><a href="">
+                  Migration from v3.x and Under
+                </a></li>
+              <li><a href="">
+                  Custom Builds
+                </a></li>
+              <li><a href="">
+                  Accessibility
+                </a></li>
+              <li><a href="">
+                  Core Team
+                </a></li>
+              <li><a href="">
+                  License and Contributing</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </article>
   </main>
 
 
@@ -122,7 +199,7 @@
 
 
 
-  
+
   <script src="https://kit.fontawesome.com/351649a1d0.js" crossorigin="anonymous"></script>
 </body>
 
