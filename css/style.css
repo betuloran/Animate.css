@@ -111,5 +111,50 @@ main header a {
   color: var(--renk4);
   text-decoration: none;
 }
+main .content {
+  grid-column: 2/3;
+  padding: 30px 30px 30px 0;
+}
+main .content h2 {
+  font-size: 33px;
+  color: var(--renk3);
+  letter-spacing: 0.4px;
+  padding-bottom: 40px;
+  padding-top: 20px;
+}
+main .content h3 {
+  font-size: 25px;
+  color: var(--renk3);
+  padding-bottom: 40px;
+}
+main .content pre {
+  background: var(--pre-color);
+  margin-bottom: 25px;
+  padding: 15px;
+  color: #fff;
+  border-radius: 5px;
+  font-family: Monoco, Consolas;
+}
+main .content p {
+  margin-bottom: 30px;
+}
+main .sidebar {
+  grid-column: 3/3;
+  background: var(--renk2);
+  padding: 25px;
+  padding-left: 40px;
+}
+main .sidebar .version {
+  font-size: 16px;
+  padding-bottom: 35px;
+}
+main .sidebar nav ul li {
+  margin-bottom: 5px;
+}
+main .sidebar nav ul li a {
+  display: block;
+  padding: 3px 0;
+  font-size: 18px;
+}
 
 /*# sourceMappingURL=style.css.map */

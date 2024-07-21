@@ -134,5 +134,60 @@ main {
         }
     }
 
-}
+    .content {
+        grid-column: 2 / 3;
+        padding: 30px 30px 30px 0;
+        h2{
+            font-size: 33px;
+            color: var(--renk3);
+            letter-spacing: .4px;
+            padding-bottom:40px;
+            padding-top:20px;
+        }
+        h3{
+            font-size:25px;
+            color: var(--renk3);
+            padding-bottom:40px;
+        }
+        pre{
+            background: var(--pre-color);
+            margin-bottom: 25px;
+            padding: 15px;
+            color: #fff;
+            border-radius:5px;
+            font-family:Monoco, Consolas;
+        }
+        p{
+            margin-bottom: 30px;
 
+        }
+    }
+
+    .sidebar {
+        grid-column: 3 / 3;
+        background: var(--renk2);
+        padding: 25px;
+        padding-left: 40px;
+
+        .version {
+            font-size: 16px;
+            padding-bottom: 35px;
+        }
+
+        nav {
+            ul {
+                li {
+                    margin-bottom: 5px;
+                    a {
+                        display: block;
+                        padding:3px 0;
+                        font-size: 18px;
+                    }
+                }
+
+
+            }
+        }
+
+    }
+}
