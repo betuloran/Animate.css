@@ -95,12 +95,14 @@
       <div class="container">
         <div class="content">
           <section>
-            <blockquote>Animate.css v4 brought some breaking changes, please refer to the migration guide before
+            <blockquote>Animate.css v4 brought some <span> breaking changes</span>, please refer to the <a
+                href="">migration guide</a> before
               updating
-              from v3.x and under.</blockquote>
-            <p>Animate.css is a library of ready-to-use, cross-browser animations for use in your web projects. Great
-              for
-              emphasis, home pages, sliders, and attention-guiding hints.
+              from v3.x and <br> under.</blockquote>
+            <p> <span>Animate.css </span> is a library of ready-to-use, cross-browser animations for use in your web
+              projects. Great
+              for emphasis,
+              home pages, sliders, and attention-guiding hints.
             </p>
             <p class="edit-github"><a
                 href="https://github.com/animate-css/animate.css/blob/main/docsSource/sections/00-intro.md"
@@ -126,21 +128,113 @@
  /&gt;
 &lt;/head&gt;
            </pre>
-            <h2>Basic usage</h2>
-            <p>After installing Animate.css, add the class <span> animate__animated</span> to an element, along with any
+            <h3>Basic usage</h3>
+            <p>After installing Animate.css, add the class <code> animate__animated</code> to an element, along with any
               of the
-              <a href="">animation names</a> (don't forget the <span>animate__</span> prefix!):
+              <a href="">animation names</a> (don't forget the <code>animate__</code> prefix!):
             </p>
-            <pre><h1 class="animate__animated animate__bounce">An animated element</h1></pre>
+            <pre>&lt;h1 class="animate__animated animate__bounce">An animated element&lt;/h1></pre>
             <p>That's it! You've got a CSS animated element. Super!</p>
             <blockquote>Animations can improve the UX of an interface, but keep in mind that they can also get in the
               way of your users! Please read the <a href="">best practices</a> and <a href="">gotchas</a> sections to
               bring your web-things to life in
               the best way possible.</blockquote>
+            <h3>Using <code>@keyframes</code> </h3>
+            <p>Even though the library provides you a few helper classes like the <code>animated</code> class to get you
+              up running
+              quickly, you can directly use the provided animations <code>keyframes.</code> This provides a flexible way
+              to use
+              Animate.css with your current projects without having to refactor your HTML code.</p>
+            <p>Example:</p>
+            <pre>.my-element {
+  display: inline-block;
+  margin: 0 0.5rem;
 
-            <h2>Accessibility</h2>
-            <p>Animate.css supports the <a href=""><span> prefers-reduced-motion
-                </span>media query </a> so that users with motion sensitivity can opt
+  animation: bounce; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}</pre>
+            <p>Be aware that some animations are dependent on the <code>animation-timing</code> property set on the
+              animation's
+              class. Changing or not declaring it might lead to unexpected results.</p>
+            <h3>CSS Custom Properties (CSS Variables)</h3>
+            <p>Since version 4, Animate.css uses custom properties (also known as CSS variables) to define the
+              animation's duration, delay, and iterations. This makes Animate.css very flexible and customizable. Need
+              to change an animation duration? Just set a new value globally or locally.</p>
+            <p>Example:</p>
+            <pre>/* This only changes this particular animation duration */
+  .animate__animated.animate__bounce {
+    --animate-duration: 2s;
+  }
+  
+  /* This changes all the animations globally */
+  :root {
+    --animate-duration: 800ms;
+    --animate-delay: 0.9s;
+  }</pre>
+            <p>Custom properties also make it easy to change all your animation's time-constrained properties on the
+              fly. It means that you can have a slow-motion or time-lapse effect with a javascript one-liner:</p>
+            <pre>
+// All animations will take twice the time to accomplish
+document.documentElement.style.setProperty('--animate-duration', '2s');
+
+// All animations will take half the time to accomplish
+document.documentElement.style.setProperty('--animate-duration', '.5s');
+            </pre>
+            <p>Even though some aging browsers do not support custom properties, Animate.css provides a proper fallback,
+              widening its support for any browser that supports CSS animations.</p>
+            <p class="edit-github"><a
+                href="https://github.com/animate-css/animate.css/blob/main/docsSource/sections/00-intro.md"
+                title="Edit this on GitHub">Edit this on GitHub</a></p>
+          </section>
+          <section>
+            <h2>Utility Classes</h2>
+            <p>Animate.css comes packed with a few utility classes to simplify its use.</p>
+            <h3>Delay classes</h3>
+            <p>You can add delays directly on the element's class attribute, just like this:</p>
+            <pre>&lt;div class="animate__animated animate__bounce animate__delay-2s">Example&lt;/div></pre>
+            <p>Animate.css provides the following delays:</p>
+            <h4>Class name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Default delay time</h4>
+            <code>
+              animate__delay-2s	2s <br>
+animate__delay-3s	3s <br>
+animate__delay-4s	4s <br>
+animate__delay-5s	5s <br>
+            </code>
+          </section>
+          <section>
+            <h2>Best Practices</h2>
+            <p>Animate.css comes packed with a few utility classes to simplify its use.</p>
+            <h3>Delay classes</h3>
+            <p>You can add delays directly on the element's class attribute, just like this:</p>
+            <pre>&lt;div class="animate__animated animate__bounce animate__delay-2s">Example&lt;/div></pre>
+            <p>Animate.css provides the following delays:</p>
+            <h4>Class name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Default delay time</h4>
+            <code>
+              animate__delay-2s	2s <br>
+animate__delay-3s	3s <br>
+animate__delay-4s	4s <br>
+animate__delay-5s	5s <br>
+            </code>
+          </section>
+          <section>
+            <h2>Usage with Javascript</h2>
+            <p>Animate.css comes packed with a few utility classes to simplify its use.</p>
+            <h3>Delay classes</h3>
+            <p>You can add delays directly on the element's class attribute, just like this:</p>
+            <pre>&lt;div class="animate__animated animate__bounce animate__delay-2s">Example&lt;/div></pre>
+            <p>Animate.css provides the following delays:</p>
+            <h4>Class name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Default delay time</h4>
+            <code>
+              animate__delay-2s	2s <br>
+animate__delay-3s	3s <br>
+animate__delay-4s	4s <br>
+animate__delay-5s	5s <br>
+            </code>
+          </section>
+          <section>
+            <h3>Accessibility</h3>
+            <p>Animate.css supports the <a href=""><code> prefers-reduced-motion
+                </code>media query </a> so that users with motion sensitivity can opt
               out of animations. On supported platforms (currently all the major browsers and OS, including mobile),
               users can select "reduce motion" on their operating system preferences, and it will turn off CSS
               transitions for them without any further work required.
@@ -148,9 +242,7 @@
             <p class="edit-github"><a
                 href="https://github.com/animate-css/animate.css/blob/main/docsSource/sections/00-intro.md"
                 title="Edit this on GitHub">Edit this on GitHub</a></p>
-
           </section>
-
         </div>
         <div class="sidebar">
           <div class="version"><a href=""><i class="fa-brands fa-github"
@@ -192,7 +284,8 @@
 
   <footer class="main-footer">
     <p>
-      Animate.css is a Hippocratic-2.1 licensed library. You can use it freely, respecting the terms included in the license file.</a>
+      Animate.css is a Hippocratic-2.1 licensed library. You can use it freely, respecting the terms included in the
+      license file.</a>
     </p>
   </footer>
 

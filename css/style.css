@@ -116,18 +116,25 @@ main .content {
   grid-column: 2/3;
   padding: 30px 30px 30px 0;
   font-size: 18px;
+  line-height: 150%;
 }
 main .content h2 {
-  font-size: 33px;
+  font-size: 32px;
   color: var(--renk3);
-  letter-spacing: 0.4px;
+  letter-spacing: 0.2px;
   padding-bottom: 40px;
   padding-top: 20px;
+  font-weight: 800;
 }
 main .content h3 {
   font-size: 25px;
   color: var(--renk3);
-  padding-bottom: 40px;
+  padding-bottom: 32px;
+  padding-top: 20px;
+  font-weight: 700;
+}
+main .content h3 code {
+  font-size: 23px;
 }
 main .content pre {
   background: var(--pre-color);
@@ -138,12 +145,32 @@ main .content pre {
   font-family: Monoco, Consolas;
   font-size: 14px;
 }
+main .content code {
+  font-family: Monoco, Consolas;
+  font-size: 15px;
+  background: var(--renk1);
+}
 main .content p {
   margin-bottom: 30px;
 }
 main .content span {
-  background: var(--renk1);
+  font-weight: 800;
+  font-size: 18px;
+}
+main .content section:not(:last-child) {
+  border-bottom: 1px solid #eaeaea;
+  margin-bottom: 50px;
+  padding-bottom: 15px;
+}
+main .content blockquote {
+  border-left: 6px solid var(--renk4);
+  padding-left: 20px;
+  margin-bottom: 25px;
+}
+main .content h4 {
   font-size: 16px;
+  font-weight: 800;
+  color: #333;
 }
 main .content .edit-github {
   font-size: 14px;
