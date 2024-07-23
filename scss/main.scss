@@ -14,6 +14,7 @@
 
 html {
     font-family: 'Work Sans', sans-serif;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -63,7 +64,6 @@ h3 {
     overflow: auto; //scroll (kaydırma) özelliğini ekler (ÖNEMLİ)
 
     section {
-
         h3 {
             padding-bottom: 4px;
         }
@@ -188,11 +188,16 @@ main {
             font-size: 18px;
         }
 
-        section:not(:last-child) {
-            border-bottom: 1px solid #eaeaea;
-            margin-bottom: 50px;
-            padding-bottom: 15px;
+        section {
+            scroll-margin: 20px;
+
+            &:not(:last-child) {
+                border-bottom: 1px solid #eaeaea;
+                margin-bottom: 50px;
+                padding-bottom: 15px;
+            }
         }
+
 
         blockquote {
             border-left: 6px solid var(--renk4);
@@ -224,6 +229,9 @@ main {
         }
 
         nav {
+            position: sticky;
+            top: 25px;
+
             ul {
                 li {
                     margin-bottom: 5px;
@@ -231,7 +239,7 @@ main {
                     a {
                         display: block;
                         padding: 3px 0;
-                        font-size: 18px;
+                        font-size: 17px;
                     }
                 }
 
@@ -240,14 +248,24 @@ main {
         }
 
     }
-}
 
-.main-footer {
-    padding: 1rem;
-    background-color: var(--renk3);
-    color: #fff;
-    font-size: 0.75rem;
-    text-align: center;
+    footer {
+        padding: 20px 0;
+        background-color: var(--renk3);
+
+        p {
+            color: #fff;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        a {
+            color: #fff;
+            font-size: 14px;
+            text-align: center;
+        }
+    }
+
 }
 
 

@@ -10,6 +10,7 @@
 
 html {
   font-family: "Work Sans", sans-serif;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -157,6 +158,9 @@ main .content span {
   font-weight: 800;
   font-size: 18px;
 }
+main .content section {
+  scroll-margin: 20px;
+}
 main .content section:not(:last-child) {
   border-bottom: 1px solid #eaeaea;
   margin-bottom: 50px;
@@ -186,20 +190,30 @@ main .sidebar .version {
   font-size: 16px;
   padding-bottom: 35px;
 }
+main .sidebar nav {
+  position: sticky;
+  top: 25px;
+}
 main .sidebar nav ul li {
   margin-bottom: 5px;
 }
 main .sidebar nav ul li a {
   display: block;
   padding: 3px 0;
-  font-size: 18px;
+  font-size: 17px;
 }
-
-.main-footer {
-  padding: 1rem;
+main footer {
+  padding: 20px 0;
   background-color: var(--renk3);
+}
+main footer p {
   color: #fff;
-  font-size: 0.75rem;
+  font-size: 14px;
+  text-align: center;
+}
+main footer a {
+  color: #fff;
+  font-size: 14px;
   text-align: center;
 }
 
