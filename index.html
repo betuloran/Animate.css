@@ -94,13 +94,13 @@
       </div>
     </header>
     <article>
-      <span class="hamburger">
+      <a href="#" id="hamburger-menu-btn" class="hamburger">
         <svg width="23" height="15" viewBox="0 0 23 15" fill="none" xmlns="http://www.w3.org/2000/svg">
           <line y1="1.5" x2="23" y2="1.5" stroke="#351C75" stroke-width="3"></line>
           <line y1="7.5" x2="23" y2="7.5" stroke="#351C75" stroke-width="3"></line>
           <line y1="13.5" x2="23" y2="13.5" stroke="#351C75" stroke-width="3"></line>
         </svg>
-      </span>
+      </a>
       <div class="container">
         <div class="content">
           <section>
@@ -253,7 +253,7 @@ animate__delay-5s	5s <br>
                 title="Edit this on GitHub">Edit this on GitHub</a></p>
           </section>
         </div>
-        <div class="sidebar">
+        <div class="sidebar" id="sidebar">
           <div class="version"><a href=""><i class="fa-brands fa-github"
                 style="color: #000000;font-size:20px;margin-right:5px;"></i></a> v4.1.1</div>
           <nav>
@@ -306,6 +306,14 @@ animate__delay-5s	5s <br>
     });
     document.getElementById('intro-sidebar-close-btn').addEventListener('click', (e) => {
       introSidebar.classList.remove('active');
+      e.preventDefault();
+    });
+
+    let sidebar=document.getElementById('sidebar'),
+    menuBtn= document.getElementById('hamburger-menu-btn');
+   menuBtn.addEventListener('click', (e) => {
+      menuBtn.classList.toggle('active');
+      sidebar.classList.toggle('active');
       e.preventDefault();
     });
   </script>
