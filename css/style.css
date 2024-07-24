@@ -7,6 +7,7 @@
   outline: 0;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
 }
 
 html {
@@ -158,6 +159,11 @@ main .hamburger {
   transition: 300ms transform;
   will-change: transform;
 }
+@media (min-width: 1000px) {
+  main .hamburger {
+    display: none;
+  }
+}
 main .hamburger.active {
   transform: translateX(-240px);
 }
@@ -283,8 +289,8 @@ main .content .edit-github {
 }
 main .sidebar {
   background: var(--renk2);
-  padding: 25px;
-  padding-left: 40px;
+  padding: 25px 40px;
+  overflow: auto;
 }
 @media (min-width: 1520px) {
   main .sidebar {

@@ -7,6 +7,7 @@
     outline: 0;
     -webkit-font-smoothing: antialiased;
     box-sizing: border-box;
+    -webkit-overflow-scrolling: touch;
 }
 
 // body {
@@ -171,6 +172,9 @@ h2 {
 
 main {
     .hamburger {
+        @media (min-width:1000px) {
+            display: none;
+        }
         position: sticky;
         top: 20px;
         width: 35px;
@@ -328,11 +332,11 @@ main {
 
     .sidebar {
         background: var(--renk2);
-        padding: 25px;
-        padding-left: 40px;
+        padding: 25px 40px;
+       overflow: auto;
 
         @media(min-width: 1520px) {
-            grid-column: 3 / 3;
+            grid-column: 3 / 3; 
         }
 
         @media (max-width:1000px) {
