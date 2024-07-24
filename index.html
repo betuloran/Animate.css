@@ -15,8 +15,10 @@
     <div class="intro-left">
       <h1>Animate.css</h1>
       <h2>Just-add-water CSS animations</h2>
+      <a href="#" class="btn" id="intro-sidebar-open-btn">See animations</a>
     </div>
-    <div class="intro-sidebar">
+    <div class="intro-sidebar" id="intro-sidebar">
+      <a href="#" class="btn" id="intro-sidebar-close-btn">Close list</a>
       <section>
         <ul>
           <h3>Attention seekers</h3>
@@ -92,6 +94,13 @@
       </div>
     </header>
     <article>
+      <span class="hamburger">
+        <svg width="23" height="15" viewBox="0 0 23 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line y1="1.5" x2="23" y2="1.5" stroke="#351C75" stroke-width="3"></line>
+          <line y1="7.5" x2="23" y2="7.5" stroke="#351C75" stroke-width="3"></line>
+          <line y1="13.5" x2="23" y2="13.5" stroke="#351C75" stroke-width="3"></line>
+        </svg>
+      </span>
       <div class="container">
         <div class="content">
           <section>
@@ -288,38 +297,18 @@ animate__delay-5s	5s <br>
 
   </main>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  <!-- responsive javascript kodlama -->
+  <script>
+    let introSidebar = document.getElementById('intro-sidebar');
+    document.getElementById('intro-sidebar-open-btn').addEventListener('click', (e) => {
+      introSidebar.classList.add('active');
+      e.preventDefault();
+    });
+    document.getElementById('intro-sidebar-close-btn').addEventListener('click', (e) => {
+      introSidebar.classList.remove('active');
+      e.preventDefault();
+    });
+  </script>
   <script src="https://kit.fontawesome.com/351649a1d0.js" crossorigin="anonymous"></script>
 </body>
 
