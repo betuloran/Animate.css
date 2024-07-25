@@ -19,7 +19,7 @@ For live reloading and easier development, you can use a local development serve
 
 ## Installation
 
-1. Clone the repo
+- Clone the repo
    
    ```sh
    git clone https://github.com/betuloran/Animate.css.git
