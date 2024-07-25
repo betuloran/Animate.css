@@ -20,11 +20,31 @@ html {
 }
 
 :root {
+    --body-color: #fff;
     --renk1: #FCE5C7;
     --renk2: #F7D7B5;
     --renk3: #351C75;
     --renk4: #E69139;
+    --renk5: #333;
+    --renk6: #eaeaea;
+    --renk7: #fff;
     --pre-color: #2D2D2D;
+}
+
+body {
+    background: var(--body-color);
+
+    &.facebook-style {
+        --body-color: #18191A;
+        --renk1: #242526;
+        --renk2: #18191A;
+        --renk3: #2D88FF;
+        --renk4: #fff;
+        --renk5: #fff;
+        --renk6: #eaeaea;
+        --renk7: #fff;
+        --pre-color: #2D2D2D;
+    }
 }
 
 a {
@@ -35,17 +55,23 @@ a {
 h1 {
     padding-bottom: 5px;
     color: var(--renk3);
-    font-size: 70px;
+    font-size: 65px;
     font-weight: 800; //yazıya kalınlık verdi
-    letter-spacing: .5px; //harflerin arasını açtık 
+    letter-spacing: .10px; //harflerin arasını açtık 
 }
 
 h2 {
     color: var(--renk4);
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 700;
     letter-spacing: .3px;
 }
+
+p {
+    font-size: 17px;
+    color: var(--renk7);
+}
+
 
 .btn {
     border: 2px solid var(--renk3);
@@ -88,6 +114,7 @@ h2 {
             transform: translateX(100%);
             will-change: transform;
             transition: 300ms transform;
+
 
             .btn {
                 margin: 25px 0;
@@ -137,24 +164,25 @@ h2 {
 
         section {
             h3 {
-                padding-bottom: 4px;
+                padding-bottom: 14px;
+                color: var(--renk7);
             }
 
             ul {
                 li {
                     a {
                         display: block;
-                        padding: 1px 0;
+                        padding: 2px 0;
                         text-decoration: none;
-                        font-size: 17.5px;
-                        color: #222;
+                        font-size: 17px;
+                        color: var(--renk5);
                         letter-spacing: .6px;
                     }
 
                 }
 
                 &:not(:last-child) {
-                    margin-bottom: 25px;
+                    margin-bottom: 50px;
                 }
             }
         }
@@ -166,7 +194,7 @@ h2 {
         font-size: 14px;
         letter-spacing: .1px;
         padding-bottom: 50px;
-        color: #333;
+        color: var(--renk5);
     }
 }
 
@@ -175,6 +203,7 @@ main {
         @media (min-width:1000px) {
             display: none;
         }
+
         position: sticky;
         top: 20px;
         width: 35px;
@@ -272,13 +301,14 @@ main {
             code {
                 font-size: 23px;
             }
+
         }
 
         pre {
             background: var(--pre-color);
             margin-bottom: 25px;
             padding: 17px;
-            color: #fff;
+            color: var(--renk7);
             border-radius: 5px;
             font-family: Monoco, Consolas;
             font-size: 14px;
@@ -288,24 +318,30 @@ main {
         code {
             font-family: Monoco, Consolas;
             font-size: 15px;
-            background: var(--renk1)
+            background: var(--renk1);
+        }
+
+        .animate-delay {
+            background: var(--renk6);
         }
 
         p {
             margin-bottom: 30px;
+            color: var(--renk7);
+            font-size: 17px;
 
         }
 
         span {
             font-weight: 800;
-            font-size: 18px;
+            font-size: 17px;
         }
 
         section {
             scroll-margin: 20px;
 
             &:not(:last-child) {
-                border-bottom: 1px solid #eaeaea;
+                border-bottom: 1px solid var(--renk6);
                 margin-bottom: 50px;
                 padding-bottom: 15px;
             }
@@ -316,12 +352,14 @@ main {
             border-left: 6px solid var(--renk4);
             padding-left: 20px;
             margin-bottom: 25px;
+            color: var(--renk7);
+            font-size: 17px;
         }
 
         h4 {
             font-size: 16px;
-            font-weight: 800;
-            color: #333;
+            font-weight: 700;
+            color: var(--renk7);
         }
 
         .edit-github {
@@ -332,11 +370,11 @@ main {
 
     .sidebar {
         background: var(--renk2);
-        padding: 25px 40px;
-       overflow: auto;
+        padding: 25px 50px;
+        overflow: auto;
 
         @media(min-width: 1520px) {
-            grid-column: 3 / 3; 
+            grid-column: 3 / 3;
         }
 
         @media (max-width:1000px) {
@@ -361,6 +399,7 @@ main {
         .version {
             font-size: 16px;
             padding-bottom: 35px;
+            color: var(--renk7);
         }
 
         nav {
@@ -393,28 +432,16 @@ main {
         background-color: var(--renk3);
 
         p {
-            color: #fff;
+            color: var(--renk7);
             font-size: 14px;
             text-align: center;
         }
 
         a {
-            color: #fff;
+            color: var(--renk7);
             font-size: 14px;
             text-align: center;
         }
     }
 
 }
-
-
-
-
-// footer{
-//      background: var(--renk3);
-// color: #fff;
-// padding: 18px;
-// text-align: center; //yazıları ortaladı
-// font-size:14px;
-// letter-spacing:.2px; 
-// }

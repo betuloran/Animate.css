@@ -10,7 +10,7 @@
   <title>Animate.css</title>
 </head>
 
-<body>
+<body class="facebook-style">
   <div class="intro">
     <div class="intro-left">
       <h1>Animate.css</h1>
@@ -203,7 +203,7 @@ document.documentElement.style.setProperty('--animate-duration', '.5s');
             <pre>&lt;div class="animate__animated animate__bounce animate__delay-2s">Example&lt;/div></pre>
             <p>Animate.css provides the following delays:</p>
             <h4>Class name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Default delay time</h4>
-            <code>
+            <code class="animate-delay">
               animate__delay-2s	2s <br>
 animate__delay-3s	3s <br>
 animate__delay-4s	4s <br>
@@ -218,7 +218,7 @@ animate__delay-5s	5s <br>
             <pre>&lt;div class="animate__animated animate__bounce animate__delay-2s">Example&lt;/div></pre>
             <p>Animate.css provides the following delays:</p>
             <h4>Class name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Default delay time</h4>
-            <code>
+            <code class="animate-delay">
               animate__delay-2s	2s <br>
 animate__delay-3s	3s <br>
 animate__delay-4s	4s <br>
@@ -233,7 +233,7 @@ animate__delay-5s	5s <br>
             <pre>&lt;div class="animate__animated animate__bounce animate__delay-2s">Example&lt;/div></pre>
             <p>Animate.css provides the following delays:</p>
             <h4>Class name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Default delay time</h4>
-            <code>
+            <code class="animate-delay">
               animate__delay-2s	2s <br>
 animate__delay-3s	3s <br>
 animate__delay-4s	4s <br>
@@ -255,7 +255,7 @@ animate__delay-5s	5s <br>
         </div>
         <div class="sidebar" id="sidebar">
           <div class="version"><a href=""><i class="fa-brands fa-github"
-                style="color: #000000;font-size:20px;margin-right:5px;"></i></a> v4.1.1</div>
+                style="color: #fff;font-size:20px;margin-right:5px;"></i></a> v4.1.1</div>
           <nav>
             <ul>
               <li>
@@ -309,9 +309,9 @@ animate__delay-5s	5s <br>
       e.preventDefault();
     });
 
-    let sidebar=document.getElementById('sidebar'),
-    menuBtn= document.getElementById('hamburger-menu-btn');
-   menuBtn.addEventListener('click', (e) => {
+    let sidebar = document.getElementById('sidebar'),
+      menuBtn = document.getElementById('hamburger-menu-btn');
+    menuBtn.addEventListener('click', (e) => {
       menuBtn.classList.toggle('active');
       sidebar.classList.toggle('active');
       e.preventDefault();
