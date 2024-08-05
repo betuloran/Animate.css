@@ -17,6 +17,15 @@ To get a local copy up and running, follow these simple steps.
 
 For live reloading and easier development, you can use a local development server. We recommend using the Live Server extension for VS Code.
 
+## Prerequisites
+
+Make sure you have the following installed:
+- [Node.js](https://nodejs.org/en)
+- [Sass](https://sass-lang.com/install/)
+  
+  ```sh
+  npm install -g sass
+
 ## Installation
 
 - Clone the repo
@@ -27,11 +36,6 @@ For live reloading and easier development, you can use a local development serve
 ## Usage
 
 To view the site locally, simply open the index.html file in your preferred web browser.
-
-## Prerequisites
-
-Make sure you have the following installed:
-- [Sass](https://sass-lang.com/install/)
 
 ## Live
 [https://animate-css-eight.vercel.app/](https://animate-css-eight.vercel.app/)
