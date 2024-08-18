@@ -1,6 +1,6 @@
 # Animate.css clone 👩‍💻
 
-This project is a clone of the [animate.css](https://animate.style/) website, created using SCSS, HTML and JavaScript. The website is designed to be responsive with a grid layout system. Below is a brief overview of the project, its features, and how to get started.
+This project is a clone of the [animate.css](https://animate.style/) website, created using SCSS and HTML. The website is designed to be responsive with a grid layout system. Below is a brief overview of the project, its features, and how to get started.
 
 ## Features 
 
