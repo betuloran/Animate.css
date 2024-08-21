@@ -13,6 +13,18 @@ This project is a clone of the [animate.css](https://animate.style/) website, cr
 
 To get a local copy up and running, follow these simple steps.
 
+## Installation
+
+1. **Clone the repository**:
+    ```bash
+    git clone https://github.com/betuloran/Animate.css.git
+    ```
+2. **Navigate to the project directory**:
+    ```bash
+    cd Animate.css
+    ```
+3. **Open `index.html` in your preferred browser**.
+
 ## Development Server
 
 For live reloading and easier development, you can use a local development server. We recommend using the Live Server extension for VS Code.
@@ -25,13 +37,6 @@ Make sure you have the following installed:
   
   ```sh
   npm install -g sass
-
-## Installation
-
-- Clone the repo
-   
-   ```sh
-   git clone https://github.com/betuloran/Animate.css.git
 
 ## Usage
 
